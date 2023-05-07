@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "DisplayCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DisplayCustomer</h2>
+
+</head>
+<body>
+    <div>
+        Customer ID : @Model.CustomerID<br/>
+        Customer Code : @Model.CustomerCode</br/>
+        Amount : @Model.Amount
+
+        @if(Model.Amount>1000)
+            {
+                @("This is Geniun Customer")
+            }
+            else
+            {
+                @("This is Regular Customer ")
+            }
+        <!-Amount: @Model.Amount<br/>
+    </div>
+</body>

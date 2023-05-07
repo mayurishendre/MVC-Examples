@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "FillCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>FillCustomer</h2>
+<div>
+    <p>
+        this is step3<br />
+        do not use server control<br /><hr />
+
+        <h4>Q. Is it good to use the server controls in asp.net</h4>
+        Ans.NO<br />
+
+
+        <h3> Explanation: </h3> Because there should not be any kind of logic in the UI.<br />
+        UI does only 2 things.<br />
+
+        1.Collect Data<br />
+        2.Display Data<br /><hr />
+        <b> But to increase the productivity use HTML helper Classes</b>
+        <form method="post" action="DisplayCustomer">
+            Customer ID: <input type="text" name="CustomerID" /><br />
+            Customer Code: <input type="text" name="CustomerCode" /><br />
+            Amount: <input type="text" name="Amount" /><br />
+            <input type="submit" name="Submit" value="Click Here" />
+        </form>
+</div>
+    
+
+

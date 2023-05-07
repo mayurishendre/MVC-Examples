@@ -1,0 +1,6 @@
+C:\Users\ASUS\Desktop\MVC\MobileDAL\bin\Debug\MobileDAL.dll
+C:\Users\ASUS\Desktop\MVC\MobileDAL\bin\Debug\MobileDAL.pdb
+C:\Users\ASUS\Desktop\MVC\MobileDAL\obj\Debug\MobileDAL.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\MVC\MobileDAL\obj\Debug\MobileDAL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\MVC\MobileDAL\obj\Debug\MobileDAL.dll
+C:\Users\ASUS\Desktop\MVC\MobileDAL\obj\Debug\MobileDAL.pdb

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC project mobileShopee", "MVC project mobileShopee.csproj", "{D9B6AD41-EB93-4B27-8611-18F7C5DEF647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDAL", "..\MobileDAL\MobileDAL.csproj", "{81ABD4CC-155D-4A8F-B1F7-D79B9AA91668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B6AD41-EB93-4B27-8611-18F7C5DEF647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B6AD41-EB93-4B27-8611-18F7C5DEF647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B6AD41-EB93-4B27-8611-18F7C5DEF647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B6AD41-EB93-4B27-8611-18F7C5DEF647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81ABD4CC-155D-4A8F-B1F7-D79B9AA91668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81ABD4CC-155D-4A8F-B1F7-D79B9AA91668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81ABD4CC-155D-4A8F-B1F7-D79B9AA91668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81ABD4CC-155D-4A8F-B1F7-D79B9AA91668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9507AD48-B5B7-4856-B810-9BBB68015D9C}
+	EndGlobalSection
+EndGlobal

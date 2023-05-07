@@ -1,0 +1,151 @@
+﻿@model IEnumerable<MVC_project_mobileShopee.Models.ProductDetails>
+
+@{
+    ViewBag.Title = "EachProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EachProductDetails</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SLNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MobileName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Features)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SimType)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Features)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SimType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+    </table>*@
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/elevateweb/elevatezoom/master/jquery.elevateZoom-3.0.8.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js"></script>
+
+<script>
+    document.write('<base href="' + document.location + '"/>');
+</script>
+<style type="text/css">
+</style>
+
+
+<link rel="stylesheet" href="style.css">
+<link href="https://www.professorcloud.com/styles/cloud-zoom.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+<script src="https://www.professorcloud.com/styles/cloud-zoom.css" rel="stylesheet"></script>
+
+
+
+<h3>Product Specification</h3>
+<div ng-controller="MainCtrl">
+    @foreach (var x in Model)
+    {
+      <div class="panel panel-default">
+          <div class="panel-heading">@x.MobileName</div>
+            <div class="panel-body">
+                <div class="col-sm-6 col-md-6" style="color:blue">
+                    <a href="https://localhost:56829/ZoomImages/@x.Url" class="cloud-zoom" rel="adjustX:10,adjustY:-4">
+                        <img src="~/images/@x.Url" width="300" height="400" />
+                    </a>
+                </div>
+            </div>
+      </div>
+
+        <div class="col-sm-9 col-md-6">
+            <h4><span id="MobileName" style="color:black"><b>MobileName</b></span></h4>
+            <h5><span id="MobileName" style="color:red">@x.MobileName</span></h5>
+
+            <h4><span id="MobileName" style="color:black"><b>Features</b></span></h4>
+            <h5><span id="MobileName" style="color:black">@x.Features</span></h5>
+
+            <h4><span id="MobileName" style="color:black"><b>Color:</b></span></h4>
+            <h5><span id="MobileName" style="color:black">@x.color</span></h5>
+
+            <h4><span id="MobileName" style="color:black"><b>Sim Type</b></span></h4>
+            <h5><span id="MobileName" style="color:black">@x.SimType</span></h5>
+
+            <h4><span id="MobileName" style="color:black"><b>Model:</b></span></h4>
+            <h5><span id="MobileName" style="color:black">@x.Model</span></h5>
+
+            <h4><span id="MobileName" style="color:black"><b>Price</b></span></h4>
+            <h5><span id="MobileName" style="color:black">@x.price</span></h5>
+        </div>
+
+
+
+
+        <div>
+
+            <a id="btn_add" href="@Url.Action("Add","AddToCart",x)" class="btn btn-info btn-lg" style="margin-left:60px">
+                <span class="glyphicon glyphicon-shopping-cart"></span>AddToCart
+            </a>
+
+            <a id="btn_add" href="@Url.Action("Index","Home")" class="btn btn-info btn-lg" style="margin-left:60px">
+                <span class="glyphicon glyphicon-eye-open"></span>ContinueShopping
+            </a>
+
+        </div>
+     }
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object Passing in MVC", "Object Passing in MVC.csproj", "{51B68746-843E-4E18-B98E-CF22713C8151}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B68746-843E-4E18-B98E-CF22713C8151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B68746-843E-4E18-B98E-CF22713C8151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B68746-843E-4E18-B98E-CF22713C8151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B68746-843E-4E18-B98E-CF22713C8151}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6758400-2D2B-4B7B-BD6C-712C8654B99B}
+	EndGlobalSection
+EndGlobal

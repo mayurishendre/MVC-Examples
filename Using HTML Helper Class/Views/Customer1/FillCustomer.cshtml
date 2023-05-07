@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "FillCustomer";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>FillCustomer</h2>
+<!--step4 Creating FORM tag using HtML Helper Class-->
+<div>
+    using (Html.BeginForm("DisplayCustomer","Customer",FormMethod.Post))
+    {
+        Enter Customer ID:=Html.TextBox("CustomerID",Model)<br />
+        Enter Customer Code:= Html.TextBox("CustomerCode",Model)<br />
+        Enter Amount:=Html.TextBox("Amount",Model)<br />
+        <input type="submit" value="Click Here" />
+    
+
+    
+        But to increase the productivity use HTML helper Classes</br>
+        <form method="post" action="DisplayCustomer">
+            Customer ID: <input type="text" name="CustomerID" /><br />
+            Customer Code: <input type="text" name="CustomerCode" /><br />
+            Amount: <input type="text" name="Amount" /><br />
+            <input type="submit" name="Submit" value="Click Here" />
+            </form>
+            }
+</div>
